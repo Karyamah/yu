@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Hero section styling */
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;  /* Full height of the viewport */
+            background: url(p.jpg) no-repeat center center/cover;
+            position: relative;
+        }
+
+        /* Hero content (heading and paragraph) */
+        .hero-content {
+            text-align: center;
+            color: white;
+            max-width: 80%;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Image styling */
+        .hero-image {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 150px;  /* You can adjust the size */
+            height: auto;
+            z-index: 0;
+        }
+
+        /* Make sure the section is responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .hero-image {
+                width: 100px;  /* Resize the image for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Website</h1>
+            <p>Your journey to excellence starts here</p>
+        </div>
+        <img class="hero-image" src="your-image.png" alt="Hero Image">
+    </section>
+</body>
+</html>
